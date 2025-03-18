@@ -1,0 +1,30 @@
+{
+	"name": "vite-favicon-manifest",
+	"version": "1.0.0",
+  "author": {
+    "name": "Jonny Thaw",
+    "url": "https://jthaw.me"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0",
+    "vite": "^6.2.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/main.js",
+  "module": "./dist/main.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5",
+    "sharp-ico": "^0.1.5"
+  }
+}
