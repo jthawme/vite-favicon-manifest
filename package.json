@@ -21,7 +21,8 @@
     }
   },
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "release": "npm run build && standard-version && npm publish"
   },
   "dependencies": {
     "sharp": "^0.33.5",
